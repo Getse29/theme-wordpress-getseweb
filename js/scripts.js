@@ -1,0 +1,1 @@
+"use strict";jQuery(document).ready((function(n){n(".nav .nav-items .menu").slicknav()}));

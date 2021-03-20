@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*
+Theme Name: Portfolio GetseWeb Developer Web
+Theme URI: https: //twitter.com/GetseWeb
+Author: GetseWeb
+Author URI: https: //twitter.com/GetseWeb
+Description: Tema para portafolio de desarrollo web diseñada y creada por GetseWeb
+Tags: blog, portfolio, portafolio, developer, getseweb, freelance, freelance web
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: getseweb
+*/
+/* Colors */
+/* Font weight */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700;800&display=swap");
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  max-width: 95%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 120rem;
+}
+
+header .header .header__logo {
+  /* Logo */
+  font-family: "Open Sans";
+  max-width: 120rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+  header .header .header__logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 577px) {
+  header .header .header__logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .header .header__logo {
+    max-width: 120rem;
+    font-size: 3rem;
+  }
+}
+
+header .header .header__logo .header__logo--color {
+  /* Color Titulo sitio */
+  font-family: "Montserrat", sans-serif;
+  background: -webkit-linear-gradient(left, #00b5df, #00bdde, #00c5dc, #00ccd8, #00d3d2, #1ddac9, #3ce1be, #59e7b0, #82ee9d, #aaf38b, #d1f77c, #f9f871);
+  background: linear-gradient(to right, #00b5df, #00bdde, #00c5dc, #00ccd8, #00d3d2, #1ddac9, #3ce1be, #59e7b0, #82ee9d, #aaf38b, #d1f77c, #f9f871);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .header .header__logo .header__logo--description {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.nav .nav-items ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav-items ul li {
+  margin: 0 2rem;
+}
+
+.nav .nav-items ul li:first-child {
+  margin-left: 0;
+}
+
+.nav .nav-items ul li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 576px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* Media Query Header */
+@media (max-width: 576px) {
+  .header__logo--description {
+    font-size: 2rem;
+  }
+}
+
+/* SLICKNAV */
+body.home .slicknav_menu {
+  background-color: transparent;
+}
+
+@media (min-width: 577px) {
+  body.home .slicknav_menu {
+    display: none;
+  }
+}
+
+.slicknav_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: -15rem;
+}
+
+.slicknav_btn {
+  font-family: "Montserrat", sans-serif;
+  background-color: #00b5df;
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+
+.slicknav_nav a {
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slicknav_nav li {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.slicknav_menutxt {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.slicknav_nav a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* Now 10px = 1rem! */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  /* px fallback */
+  font-size: 1.6rem;
+  /* default font-size for document */
+  line-height: 1.5;
+  /* a nice line-height */
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(left bottom, #13181f, #11151b, #0f1216, #0c0e11, #08090b);
+  background-image: linear-gradient(to right top, #13181f, #11151b, #0f1216, #0c0e11, #08090b);
+  color: #fff;
+}
+
+/* for everything else, rem = px/10 */
+footer {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+/* you can safely nest rems, it's still 1rem = 10px */
+footer small {
+  font-size: 10px;
+  font-size: 1rem;
+}
